@@ -31,4 +31,4 @@ jit <- position_jitter(height=0.15, width=0.01)
 p <- ggplot(data, aes(y=reorder(Group, Difference, mean), x=Difference, color=Group))
 
 p + geom_jitter(alpha=0.5, position=jit) + labs(y="") +
-    guides(color = guide_legend(override.aes = list(alpha = 1)))
+    guides(color = FALSE)
